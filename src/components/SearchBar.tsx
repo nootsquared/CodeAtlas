@@ -1,6 +1,17 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+
 export default function SearchBar() {
+  const [search, setSearch] = useState("");
+
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    router.push(`/repo?url=${search}`);
+  };
+
   return (
     <div className="relative flex items-start justify-center w-full max-w-xl mt-2">
       {/* Outer glow effect */}
@@ -61,6 +72,11 @@ export default function SearchBar() {
         
         {/* Search textarea */}
         <textarea
+          value={search}
+          onChange={(e) => {
+            setSearch(e.target.value);
+            // console.log(e.target.value);
+          }}
           placeholder="Enter a github link..."
           rows={1}
           className="relative w-full px-6 py-5 text-sm text-white placeholder-gray-500 bg-transparent rounded-2xl outline-none transition-all duration-200 focus:placeholder-gray-400 resize-none overflow-hidden"
@@ -119,6 +135,7 @@ export default function SearchBar() {
             borderTop: "1px solid rgba(168, 85, 247, 0.4)",
             borderBottom: "1px solid rgba(79, 70, 229, 0.2)",
           }}
+          onClick={handleButtonClick}
         >
           <svg
             className="w-5 h-5 text-purple-300 group-hover:text-purple-200 transition-colors duration-300"

@@ -1,5 +1,297 @@
-[00:00:00.851] Server  LOG     ✓ Ready in 660ms
-[00:00:16.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:32.244] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:16.767] Server  LOG     ✓ Compiled in 28ms
-[00:19:21.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.534] Server  LOG     ✓ Ready in 1300ms
+[00:00:02.065] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.718] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:01.731] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:03.127] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:05.223] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:38.590] Server  LOG     ✓ Compiled in 224ms
+[00:40:40.660] Server  LOG     ✓ Compiled in 34ms
+[00:40:41.087] Browser ERROR   ./src/components/SearchBar.tsx:5:3
+Parsing ecmascript source code failed
+  3 | export default function SearchBar() {
+  4 |   const 
+> 5 |   return (
+    |   ^^^^^^
+  6 |     <div className="relative flex items-start justify-center w-full max-w-xl mt-2">
+  7 |       {/* Outer glow effect */}
+  8 |       <div
+
+Expected ident
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[00:40:41.732] Server  LOG     ✓ Compiled in 11ms
+[00:40:42.089] Browser ERROR   ./src/components/SearchBar.tsx:4:9
+Parsing ecmascript source code failed
+  2 |
+  3 | export default function SearchBar() {
+> 4 |   const []
+    |         ^^
+  5 |   return (
+  6 |     <div className="relative flex items-start justify-center w-full max-w-xl mt-2">
+  7 |       {/* Outer glow effect */}
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[00:40:51.086] Browser ERROR   uncaughtError: ReferenceError: useState is not defined
+[00:40:53.240] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:40:53.316] Server  ERROR   ⨯ ReferenceError: useState is not defined
+[00:40:53.321] Server  LOG     ✓ Compiled in 10ms
+[00:40:53.648] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:54.093] Browser ERROR   uncaughtError: ReferenceError: useState is not defined
+[00:40:55.564] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:40:55.619] Server  LOG     ✓ Compiled in 30ms
+[00:40:55.796] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:59.563] Server  LOG     ✓ Compiled in 14ms
+[00:41:00.086] Browser ERROR   ./src/components/SearchBar.tsx:8:3
+Parsing ecmascript source code failed
+   6 |   const [search, setSearch] = useState("");
+   7 |   const
+>  8 |   return (
+     |   ^^^^^^
+   9 |     <div className="relative flex items-start justify-center w-full max-w-xl mt-2">
+  10 |       {/* Outer glow effect */}
+  11 |       <div
+
+Expected ident
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[00:41:10.558] Server  LOG     ✓ Compiled in 11ms
+[00:44:08.736] Server  LOG     ✓ Compiled in 10ms
+[00:44:10.149] Server  LOG     ✓ Compiled in 15ms
+[00:44:19.459] Server  LOG     ✓ Compiled in 9ms
+[00:44:25.060] Server  LOG     ✓ Compiled in 9ms
+[00:44:30.545] Server  LOG     ✓ Compiled in 9ms
+[00:44:31.087] Browser ERROR   Expected `%s` listener to be a function, instead got a value of `%s` type. onChange boolean
+[00:44:32.309] Server  LOG     ✓ Compiled in 12ms
+[00:44:33.088] Browser ERROR   ./src/components/SearchBar.tsx:73:11
+Parsing ecmascript source code failed
+  71 |           value={search}
+  72 |           onChange=
+> 73 |           placeholder="Enter a github link..."
+     |           ^^^^^^^^^^^
+  74 |           rows={1}
+  75 |           className="relative w-full px-6 py-5 text-sm text-white placeholder-gray-500 bg-transparent rounded-2xl outline-none transition-all duration-200 focus:placeholder-gray-400 resize-none overflow-hidden"
+  76 |           style={{
+
+Expected '</', got 'placeholder'
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[00:44:38.089] Browser ERROR   uncaughtError: ReferenceError: e is not defined
+[00:44:43.576] Server  LOG     ✓ Compiled in 13ms
+[00:44:44.088] Browser ERROR   ./src/components/SearchBar.tsx:72:28
+Parsing ecmascript source code failed
+  70 |         <textarea
+  71 |           value={search}
+> 72 |           onChange={(e) => }
+     |                            ^
+  73 |           placeholder="Enter a github link..."
+  74 |           rows={1}
+  75 |           className="relative w-full px-6 py-5 text-sm text-white placeholder-gray-500 bg-transparent rounded-2xl outline-none transition-all duration-200 focus:placeholder-gray-400 resize-none overflow-hidden"
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[00:44:49.625] Server  LOG     ✓ Compiled in 9ms
+[00:44:49.628] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:44:50.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:52.659] Server  LOG     ✓ Compiled in 11ms
+[00:44:56.742] Server  LOG     ✓ Compiled in 7ms
+[00:46:05.998] Browser LOG     
+[00:46:07.263] Browser LOG     s
+[00:46:08.729] Browser LOG     sd
+[00:46:09.212] Browser LOG     sda
+[00:46:09.380] Browser LOG     sdas
+[00:46:09.705] Browser LOG     sdasd
+[00:46:09.705] Browser LOG     sdasda
+[00:46:09.705] Browser LOG     sdasdas
+[00:46:09.988] Browser LOG     sdasdasd
+[00:46:09.988] Browser LOG     sdasdasda
+[00:46:09.988] Browser LOG     sdasdasdas
+[00:46:10.245] Browser LOG     sdasdasdasd
+[00:46:10.245] Browser LOG     sdasdasdasda
+[00:46:10.245] Browser LOG     sdasdasdasdas
+[00:46:10.476] Browser LOG     sdasdasdasdasd
+[00:46:10.476] Browser LOG     sdasdasdasdasda
+[00:46:10.476] Browser LOG     sdasdasdasdasdas
+[00:46:10.718] Browser LOG     sdasdasdasdasdasd
+[00:46:10.718] Browser LOG     sdasdasdasdasdasds
+[00:46:11.229] Browser LOG     sdasdasdasdasdasdsd
+[00:46:12.371] Browser LOG     
+[00:46:13.470] Browser LOG     s
+[00:46:14.393] Browser LOG     ss
+[00:46:16.387] Browser LOG     
+[00:46:19.479] Browser LOG     s
+[00:57:35.940] Server  LOG     ✓ Compiled in 8ms
+[00:57:45.114] Server  LOG     ✓ Compiled in 10ms
+[00:57:45.216] Browser ERROR   ./src/components/SearchBar.tsx:154:2
+Parsing ecmascript source code failed
+  152 |     </div>
+  153 |   );
+> 154 | }
+      |  ^
+
+Expected '}', got '<eof>'
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[00:57:46.140] Server  LOG     ✓ Compiled in 8ms
+[00:57:49.080] Browser LOG     ss
+[00:57:49.476] Browser LOG     sss
+[00:57:49.650] Browser LOG     ssss
+[00:57:49.800] Browser LOG     sssss
+[00:57:49.941] Browser LOG     ssssss
+[00:57:50.759] Browser LOG     sssssss
+[00:57:51.767] Browser LOG     
+[00:57:52.341] Browser LOG     s
+[00:57:52.800] Browser LOG     ss
+[00:57:53.244] Browser LOG     sss
+[00:57:54.633] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:55.632] Browser LOG     
+[00:57:56.368] Browser LOG     s
+[00:58:02.541] Server  LOG     ✓ Compiled in 9ms
+[00:58:04.939] Server  LOG     ✓ Compiled in 8ms
+[00:58:06.122] Browser LOG     sss
+[00:58:08.017] Browser LOG     
+[00:58:08.681] Browser LOG     s
+[00:58:08.868] Browser LOG     ss
+[00:58:09.025] Browser LOG     sss
+[00:58:09.598] Browser LOG     
+[00:58:09.731] Browser LOG     s
+[00:58:09.883] Browser LOG     sd
+[00:58:10.084] Browser LOG     sda
+[00:58:10.084] Browser LOG     sdad
+[00:58:10.258] Browser LOG     sdads
+[00:58:10.258] Browser LOG     sdadsa
+[00:58:10.675] Browser LOG     
+[00:58:24.423] Server  LOG     ✓ Compiled in 7ms
+[01:16:32.380] Server  LOG     ✓ Compiled in 14ms
+[01:16:38.509] Server  LOG     ✓ Compiled in 11ms
+[01:16:39.335] Browser ERROR   ./src/components/SearchBar.tsx:10:3
+Parsing ecmascript source code failed
+   8 |   const 
+   9 |
+> 10 |   return (
+     |   ^^^^^^
+  11 |     <div className="relative flex items-start justify-center w-full max-w-xl mt-2">
+  12 |       {/* Outer glow effect */}
+  13 |       <div
+
+Expected ident
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[01:17:26.748] Server  LOG     ✓ Compiled in 7ms
+[01:17:27.339] Browser ERROR   uncaughtError: ReferenceError: useRouter is not defined
+[01:17:48.467] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:17:49.015] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:17:54.722] Server  LOG     ✓ Compiled in 10ms
+[01:17:55.333] Browser ERROR   ./src/components/SearchBar.tsx:157:2
+Parsing ecmascript source code failed
+  155 |     </div>
+  156 |   );
+> 157 | }
+      |  ^
+
+Expected '}', got '<eof>'
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[01:17:58.904] Server  LOG     ✓ Compiled in 9ms
+[01:18:03.338] Server  LOG     ✓ Compiled in 9ms
+[01:18:05.555] Server  LOG     ✓ Compiled in 8ms
+[01:18:34.913] Server  LOG     ✓ Compiled in 7ms
+[01:18:43.949] Server  LOG     ✓ Compiled in 10ms
+[01:21:33.777] Server  LOG     ✓ Compiled in 9ms
+[01:21:38.366] Server  LOG     ✓ Compiled in 9ms
+[01:21:40.185] Server  LOG     ✓ Compiled in 6ms
+[01:23:54.912] Server  LOG     ✓ Compiled in 9ms
+[01:23:57.120] Server  LOG     ✓ Compiled in 9ms
+[01:23:57.334] Browser ERROR   ./src/components/SearchBar.tsx:12:29
+Parsing ecmascript source code failed
+  10 |
+  11 |   const handleButtonClick = () => {
+> 12 |     router.push('/repo?url='$);
+     |                             ^
+  13 |   };
+  14 |
+  15 |   return (
+
+Expected ',', got '$'
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[01:24:00.336] Browser ERROR   ./src/components/SearchBar.tsx:12:29
+Parsing ecmascript source code failed
+  10 |
+  11 |   const handleButtonClick = () => {
+> 12 |     router.push('/repo?url='${});
+     |                             ^
+  13 |   };
+  14 |
+  15 |   return (
+
+Expected ',', got '$'
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[01:24:01.335] Browser ERROR   ./src/components/SearchBar.tsx:12:29
+Parsing ecmascript source code failed
+  10 |
+  11 |   const handleButtonClick = () => {
+> 12 |     router.push('/repo?url='${search});
+     |                             ^
+  13 |   };
+  14 |
+  15 |   return (
+
+Expected ',', got '$'
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[01:24:15.026] Server  LOG     ✓ Compiled in 10ms
+[01:24:15.333] Browser ERROR   ./src/components/SearchBar.tsx:12:17
+Parsing ecmascript source code failed
+  10 |
+  11 |   const handleButtonClick = () => {
+> 12 |     router.push('/repo?url=${search});
+     |                 ^^^^^^^^^^^^^^^^^^^^^^
+  13 |   };
+  14 |
+  15 |   return (
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./src/components/SearchBar.tsx
+    ./src/app/page.tsx
+[01:24:28.671] Server  LOG     ✓ Compiled in 18ms
+[01:25:06.218] Server  LOG     ✓ Compiled in 9ms
